@@ -446,6 +446,14 @@ section[id] {
   line-height: 1.72;
 }
 
+.section-support {
+  margin: 14px 0 0;
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  opacity: 0.8;
+}
+
 .button {
   display: inline-flex;
   align-items: center;
@@ -560,6 +568,17 @@ section[id] {
   justify-content: center;
   gap: 12px;
   margin-top: 38px;
+}
+
+@media (min-width: 1280px) {
+  .hero-copy {
+    max-width: 1200px;
+  }
+
+  .hero-copy h1 {
+    white-space: nowrap;
+    font-size: clamp(3.8rem, 6.2vw, 6.9rem);
+  }
 }
 
 .hero-stage,
@@ -1150,7 +1169,7 @@ section[id] {
 }
 
 .concept-copy {
-  padding: 28px 28px 30px;
+  padding: 26px 26px 28px;
 }
 
 .concept-copy p {
@@ -1162,17 +1181,17 @@ section[id] {
 
 .concept-copy span {
   display: block;
-  margin-top: 14px;
+  margin-top: 12px;
   color: var(--ink-soft);
-  font-size: 0.98rem;
-  line-height: 1.72;
+  font-size: 0.95rem;
+  line-height: 1.68;
 }
 
 .concept-meta-tags {
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
-  margin-top: 18px;
+  margin-top: 16px;
 }
 
 .concept-meta-tags span {
@@ -1658,6 +1677,15 @@ section[id] {
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
+}
+
+.team-commitment {
+  margin-top: 18px;
+  max-width: 920px;
+  font-size: clamp(1.15rem, 2vw, 1.55rem) !important;
+  font-weight: 600;
+  letter-spacing: -0.03em;
+  line-height: 1.5 !important;
 }
 
 .final-cta-section {
